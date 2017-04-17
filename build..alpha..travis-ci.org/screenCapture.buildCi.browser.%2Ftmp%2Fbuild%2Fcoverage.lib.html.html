@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-minimatch/minimatch/minimatch.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-minimatch/node_modules/minimatch/minimatch.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-minimatch">npmtest-minimatch (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-minimatch/minimatch/minimatch.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-minimatch/node_modules/minimatch/minimatch.js</span></h1>
     <h2>
         
         Statements: <span class="metric">10.77% <small>(46 / 427)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-minimatch/minimatch/</a> &#187; minimatch.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-minimatch/node_modules/minimatch/</a> » minimatch.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -2112,170 +2110,170 @@ function charSet (s) {
 var slashSplit = /\/+/
 &nbsp;
 minimatch.filter = filter
-<span class="fstat-no" title="function not covered" >function filter (pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >function (p, i, list) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return minimatch(p, pattern, options)</span>
+<span class="fstat-no" title="function not covered">function filter (pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
+<span class="cstat-no" title="statement not covered">  return <span class="fstat-no" title="function not covered">function (p, i, list) {</span></span>
+<span class="cstat-no" title="statement not covered">    return minimatch(p, pattern, options)</span>
   }
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function ext (a, b) {</span>
-<span class="cstat-no" title="statement not covered" >  a = a || {}</span>
-<span class="cstat-no" title="statement not covered" >  b = b || {}</span>
-<span class="cstat-no" title="statement not covered" >  var t = {}</span>
-<span class="cstat-no" title="statement not covered" >  Object.keys(b).forEach(<span class="fstat-no" title="function not covered" >function (k) {</span></span>
-<span class="cstat-no" title="statement not covered" >    t[k] = b[k]</span>
+<span class="fstat-no" title="function not covered">function ext (a, b) {</span>
+<span class="cstat-no" title="statement not covered">  a = a || {}</span>
+<span class="cstat-no" title="statement not covered">  b = b || {}</span>
+<span class="cstat-no" title="statement not covered">  var t = {}</span>
+<span class="cstat-no" title="statement not covered">  Object.keys(b).forEach(<span class="fstat-no" title="function not covered">function (k) {</span></span>
+<span class="cstat-no" title="statement not covered">    t[k] = b[k]</span>
   })
-<span class="cstat-no" title="statement not covered" >  Object.keys(a).forEach(<span class="fstat-no" title="function not covered" >function (k) {</span></span>
-<span class="cstat-no" title="statement not covered" >    t[k] = a[k]</span>
+<span class="cstat-no" title="statement not covered">  Object.keys(a).forEach(<span class="fstat-no" title="function not covered">function (k) {</span></span>
+<span class="cstat-no" title="statement not covered">    t[k] = a[k]</span>
   })
-<span class="cstat-no" title="statement not covered" >  return t</span>
+<span class="cstat-no" title="statement not covered">  return t</span>
 }
 &nbsp;
-minimatch.defaults = <span class="fstat-no" title="function not covered" >function (def) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!def || !Object.keys(def).length) <span class="cstat-no" title="statement not covered" >return minimatch</span></span>
+minimatch.defaults = <span class="fstat-no" title="function not covered">function (def) {</span>
+<span class="cstat-no" title="statement not covered">  if (!def || !Object.keys(def).length) <span class="cstat-no" title="statement not covered">return minimatch</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var orig = minimatch</span>
+<span class="cstat-no" title="statement not covered">  var orig = minimatch</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var m = <span class="fstat-no" title="function not covered" >function minimatch (p, pattern, options) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return orig.minimatch(p, pattern, ext(def, options))</span>
+<span class="cstat-no" title="statement not covered">  var m = <span class="fstat-no" title="function not covered">function minimatch (p, pattern, options) {</span></span>
+<span class="cstat-no" title="statement not covered">    return orig.minimatch(p, pattern, ext(def, options))</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  m.Minimatch = <span class="fstat-no" title="function not covered" >function Minimatch (pattern, options) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return new orig.Minimatch(pattern, ext(def, options))</span>
+<span class="cstat-no" title="statement not covered">  m.Minimatch = <span class="fstat-no" title="function not covered">function Minimatch (pattern, options) {</span></span>
+<span class="cstat-no" title="statement not covered">    return new orig.Minimatch(pattern, ext(def, options))</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return m</span>
+<span class="cstat-no" title="statement not covered">  return m</span>
 }
 &nbsp;
-Minimatch.defaults = <span class="fstat-no" title="function not covered" >function (def) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!def || !Object.keys(def).length) <span class="cstat-no" title="statement not covered" >return Minimatch</span></span>
-<span class="cstat-no" title="statement not covered" >  return minimatch.defaults(def).Minimatch</span>
+Minimatch.defaults = <span class="fstat-no" title="function not covered">function (def) {</span>
+<span class="cstat-no" title="statement not covered">  if (!def || !Object.keys(def).length) <span class="cstat-no" title="statement not covered">return Minimatch</span></span>
+<span class="cstat-no" title="statement not covered">  return minimatch.defaults(def).Minimatch</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function minimatch (p, pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  if (typeof pattern !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    throw new TypeError('glob pattern string required')</span>
+<span class="fstat-no" title="function not covered">function minimatch (p, pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  if (typeof pattern !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">    throw new TypeError('glob pattern string required')</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!options) <span class="cstat-no" title="statement not covered" >options = {}</span></span>
+<span class="cstat-no" title="statement not covered">  if (!options) <span class="cstat-no" title="statement not covered">options = {}</span></span>
 &nbsp;
   // shortcut: comments match nothing.
-<span class="cstat-no" title="statement not covered" >  if (!options.nocomment &amp;&amp; pattern.charAt(0) === '#') {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="cstat-no" title="statement not covered">  if (!options.nocomment &amp;&amp; pattern.charAt(0) === '#') {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
   // "" only matches ""
-<span class="cstat-no" title="statement not covered" >  if (pattern.trim() === '') <span class="cstat-no" title="statement not covered" >return p === ''</span></span>
+<span class="cstat-no" title="statement not covered">  if (pattern.trim() === '') <span class="cstat-no" title="statement not covered">return p === ''</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return new Minimatch(pattern, options).match(p)</span>
+<span class="cstat-no" title="statement not covered">  return new Minimatch(pattern, options).match(p)</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function Minimatch (pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!(this instanceof Minimatch)) {</span>
-<span class="cstat-no" title="statement not covered" >    return new Minimatch(pattern, options)</span>
+<span class="fstat-no" title="function not covered">function Minimatch (pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  if (!(this instanceof Minimatch)) {</span>
+<span class="cstat-no" title="statement not covered">    return new Minimatch(pattern, options)</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (typeof pattern !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    throw new TypeError('glob pattern string required')</span>
+<span class="cstat-no" title="statement not covered">  if (typeof pattern !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">    throw new TypeError('glob pattern string required')</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!options) <span class="cstat-no" title="statement not covered" >options = {}</span></span>
-<span class="cstat-no" title="statement not covered" >  pattern = pattern.trim()</span>
+<span class="cstat-no" title="statement not covered">  if (!options) <span class="cstat-no" title="statement not covered">options = {}</span></span>
+<span class="cstat-no" title="statement not covered">  pattern = pattern.trim()</span>
 &nbsp;
   // windows support: need to use /, not \
-<span class="cstat-no" title="statement not covered" >  if (path.sep !== '/') {</span>
-<span class="cstat-no" title="statement not covered" >    pattern = pattern.split(path.sep).join('/')</span>
+<span class="cstat-no" title="statement not covered">  if (path.sep !== '/') {</span>
+<span class="cstat-no" title="statement not covered">    pattern = pattern.split(path.sep).join('/')</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.options = options</span>
-<span class="cstat-no" title="statement not covered" >  this.set = []</span>
-<span class="cstat-no" title="statement not covered" >  this.pattern = pattern</span>
-<span class="cstat-no" title="statement not covered" >  this.regexp = null</span>
-<span class="cstat-no" title="statement not covered" >  this.negate = false</span>
-<span class="cstat-no" title="statement not covered" >  this.comment = false</span>
-<span class="cstat-no" title="statement not covered" >  this.empty = false</span>
+<span class="cstat-no" title="statement not covered">  this.options = options</span>
+<span class="cstat-no" title="statement not covered">  this.set = []</span>
+<span class="cstat-no" title="statement not covered">  this.pattern = pattern</span>
+<span class="cstat-no" title="statement not covered">  this.regexp = null</span>
+<span class="cstat-no" title="statement not covered">  this.negate = false</span>
+<span class="cstat-no" title="statement not covered">  this.comment = false</span>
+<span class="cstat-no" title="statement not covered">  this.empty = false</span>
 &nbsp;
   // make the set of regexps etc.
-<span class="cstat-no" title="statement not covered" >  this.make()</span>
+<span class="cstat-no" title="statement not covered">  this.make()</span>
 }
 &nbsp;
-Minimatch.prototype.debug = <span class="fstat-no" title="function not covered" >function () {</span>}
+Minimatch.prototype.debug = <span class="fstat-no" title="function not covered">function () {</span>}
 &nbsp;
 Minimatch.prototype.make = make
-<span class="fstat-no" title="function not covered" >function make () {</span>
+<span class="fstat-no" title="function not covered">function make () {</span>
   // don't do it more than once.
-<span class="cstat-no" title="statement not covered" >  if (this._made) <span class="cstat-no" title="statement not covered" >return</span></span>
+<span class="cstat-no" title="statement not covered">  if (this._made) <span class="cstat-no" title="statement not covered">return</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var pattern = this.pattern</span>
-<span class="cstat-no" title="statement not covered" >  var options = this.options</span>
+<span class="cstat-no" title="statement not covered">  var pattern = this.pattern</span>
+<span class="cstat-no" title="statement not covered">  var options = this.options</span>
 &nbsp;
   // empty patterns and comments match nothing.
-<span class="cstat-no" title="statement not covered" >  if (!options.nocomment &amp;&amp; pattern.charAt(0) === '#') {</span>
-<span class="cstat-no" title="statement not covered" >    this.comment = true</span>
-<span class="cstat-no" title="statement not covered" >    return</span>
+<span class="cstat-no" title="statement not covered">  if (!options.nocomment &amp;&amp; pattern.charAt(0) === '#') {</span>
+<span class="cstat-no" title="statement not covered">    this.comment = true</span>
+<span class="cstat-no" title="statement not covered">    return</span>
   }
-<span class="cstat-no" title="statement not covered" >  if (!pattern) {</span>
-<span class="cstat-no" title="statement not covered" >    this.empty = true</span>
-<span class="cstat-no" title="statement not covered" >    return</span>
+<span class="cstat-no" title="statement not covered">  if (!pattern) {</span>
+<span class="cstat-no" title="statement not covered">    this.empty = true</span>
+<span class="cstat-no" title="statement not covered">    return</span>
   }
 &nbsp;
   // step 1: figure out negation, etc.
-<span class="cstat-no" title="statement not covered" >  this.parseNegate()</span>
+<span class="cstat-no" title="statement not covered">  this.parseNegate()</span>
 &nbsp;
   // step 2: expand braces
-<span class="cstat-no" title="statement not covered" >  var set = this.globSet = this.braceExpand()</span>
+<span class="cstat-no" title="statement not covered">  var set = this.globSet = this.braceExpand()</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (options.debug) <span class="cstat-no" title="statement not covered" >this.debug = console.error</span></span>
+<span class="cstat-no" title="statement not covered">  if (options.debug) <span class="cstat-no" title="statement not covered">this.debug = console.error</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.debug(this.pattern, set)</span>
+<span class="cstat-no" title="statement not covered">  this.debug(this.pattern, set)</span>
 &nbsp;
   // step 3: now we have a set, so turn each one into a series of path-portion
   // matching patterns.
   // These will be regexps, except in the case of "**", which is
   // set to the GLOBSTAR object for globstar behavior,
   // and will not contain any / characters
-<span class="cstat-no" title="statement not covered" >  set = this.globParts = set.map(<span class="fstat-no" title="function not covered" >function (s) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return s.split(slashSplit)</span>
+<span class="cstat-no" title="statement not covered">  set = this.globParts = set.map(<span class="fstat-no" title="function not covered">function (s) {</span></span>
+<span class="cstat-no" title="statement not covered">    return s.split(slashSplit)</span>
   })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.debug(this.pattern, set)</span>
+<span class="cstat-no" title="statement not covered">  this.debug(this.pattern, set)</span>
 &nbsp;
   // glob --&gt; regexps
-<span class="cstat-no" title="statement not covered" >  set = set.map(<span class="fstat-no" title="function not covered" >function (s, si, set) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return s.map(this.parse, this)</span>
+<span class="cstat-no" title="statement not covered">  set = set.map(<span class="fstat-no" title="function not covered">function (s, si, set) {</span></span>
+<span class="cstat-no" title="statement not covered">    return s.map(this.parse, this)</span>
   }, this)
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.debug(this.pattern, set)</span>
+<span class="cstat-no" title="statement not covered">  this.debug(this.pattern, set)</span>
 &nbsp;
   // filter out everything that didn't compile properly.
-<span class="cstat-no" title="statement not covered" >  set = set.filter(<span class="fstat-no" title="function not covered" >function (s) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return s.indexOf(false) === -1</span>
+<span class="cstat-no" title="statement not covered">  set = set.filter(<span class="fstat-no" title="function not covered">function (s) {</span></span>
+<span class="cstat-no" title="statement not covered">    return s.indexOf(false) === -1</span>
   })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.debug(this.pattern, set)</span>
+<span class="cstat-no" title="statement not covered">  this.debug(this.pattern, set)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.set = set</span>
+<span class="cstat-no" title="statement not covered">  this.set = set</span>
 }
 &nbsp;
 Minimatch.prototype.parseNegate = parseNegate
-<span class="fstat-no" title="function not covered" >function parseNegate () {</span>
-<span class="cstat-no" title="statement not covered" >  var pattern = this.pattern</span>
-<span class="cstat-no" title="statement not covered" >  var negate = false</span>
-<span class="cstat-no" title="statement not covered" >  var options = this.options</span>
-<span class="cstat-no" title="statement not covered" >  var negateOffset = 0</span>
+<span class="fstat-no" title="function not covered">function parseNegate () {</span>
+<span class="cstat-no" title="statement not covered">  var pattern = this.pattern</span>
+<span class="cstat-no" title="statement not covered">  var negate = false</span>
+<span class="cstat-no" title="statement not covered">  var options = this.options</span>
+<span class="cstat-no" title="statement not covered">  var negateOffset = 0</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (options.nonegate) <span class="cstat-no" title="statement not covered" >return</span></span>
+<span class="cstat-no" title="statement not covered">  if (options.nonegate) <span class="cstat-no" title="statement not covered">return</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (var i = 0, l = pattern.length</span>
+<span class="cstat-no" title="statement not covered">  for (var i = 0, l = pattern.length</span>
     ; i &lt; l &amp;&amp; pattern.charAt(i) === '!'
     ; i++) {
-<span class="cstat-no" title="statement not covered" >    negate = !negate</span>
-<span class="cstat-no" title="statement not covered" >    negateOffset++</span>
+<span class="cstat-no" title="statement not covered">    negate = !negate</span>
+<span class="cstat-no" title="statement not covered">    negateOffset++</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (negateOffset) <span class="cstat-no" title="statement not covered" >this.pattern = pattern.substr(negateOffset)</span></span>
-<span class="cstat-no" title="statement not covered" >  this.negate = negate</span>
+<span class="cstat-no" title="statement not covered">  if (negateOffset) <span class="cstat-no" title="statement not covered">this.pattern = pattern.substr(negateOffset)</span></span>
+<span class="cstat-no" title="statement not covered">  this.negate = negate</span>
 }
 &nbsp;
 // Brace expansion:
@@ -2288,35 +2286,35 @@ Minimatch.prototype.parseNegate = parseNegate
 // Invalid sets are not expanded.
 // a{2..}b -&gt; a{2..}b
 // a{b}c -&gt; a{b}c
-minimatch.braceExpand = <span class="fstat-no" title="function not covered" >function (pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  return braceExpand(pattern, options)</span>
+minimatch.braceExpand = <span class="fstat-no" title="function not covered">function (pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  return braceExpand(pattern, options)</span>
 }
 &nbsp;
 Minimatch.prototype.braceExpand = braceExpand
 &nbsp;
-<span class="fstat-no" title="function not covered" >function braceExpand (pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!options) {</span>
-<span class="cstat-no" title="statement not covered" >    if (this instanceof Minimatch) {</span>
-<span class="cstat-no" title="statement not covered" >      options = this.options</span>
+<span class="fstat-no" title="function not covered">function braceExpand (pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  if (!options) {</span>
+<span class="cstat-no" title="statement not covered">    if (this instanceof Minimatch) {</span>
+<span class="cstat-no" title="statement not covered">      options = this.options</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      options = {}</span>
+<span class="cstat-no" title="statement not covered">      options = {}</span>
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  pattern = typeof pattern === 'undefined'</span>
+<span class="cstat-no" title="statement not covered">  pattern = typeof pattern === 'undefined'</span>
     ? this.pattern : pattern
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (typeof pattern === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >    throw new TypeError('undefined pattern')</span>
+<span class="cstat-no" title="statement not covered">  if (typeof pattern === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">    throw new TypeError('undefined pattern')</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (options.nobrace ||</span>
+<span class="cstat-no" title="statement not covered">  if (options.nobrace ||</span>
     !pattern.match(/\{.*\}/)) {
     // shortcut. no need to expand.
-<span class="cstat-no" title="statement not covered" >    return [pattern]</span>
+<span class="cstat-no" title="statement not covered">    return [pattern]</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return expand(pattern)</span>
+<span class="cstat-no" title="statement not covered">  return expand(pattern)</span>
 }
 &nbsp;
 // parse a component of the expanded set.
@@ -2332,79 +2330,79 @@ Minimatch.prototype.braceExpand = braceExpand
 // default, and can be disabled by setting options.noglobstar.
 Minimatch.prototype.parse = parse
 var SUBPARSE = {}
-<span class="fstat-no" title="function not covered" >function parse (pattern, isSub) {</span>
-<span class="cstat-no" title="statement not covered" >  if (pattern.length &gt; 1024 * 64) {</span>
-<span class="cstat-no" title="statement not covered" >    throw new TypeError('pattern is too long')</span>
+<span class="fstat-no" title="function not covered">function parse (pattern, isSub) {</span>
+<span class="cstat-no" title="statement not covered">  if (pattern.length &gt; 1024 * 64) {</span>
+<span class="cstat-no" title="statement not covered">    throw new TypeError('pattern is too long')</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var options = this.options</span>
+<span class="cstat-no" title="statement not covered">  var options = this.options</span>
 &nbsp;
   // shortcuts
-<span class="cstat-no" title="statement not covered" >  if (!options.noglobstar &amp;&amp; pattern === '**') <span class="cstat-no" title="statement not covered" >return GLOBSTAR</span></span>
-<span class="cstat-no" title="statement not covered" >  if (pattern === '') <span class="cstat-no" title="statement not covered" >return ''</span></span>
+<span class="cstat-no" title="statement not covered">  if (!options.noglobstar &amp;&amp; pattern === '**') <span class="cstat-no" title="statement not covered">return GLOBSTAR</span></span>
+<span class="cstat-no" title="statement not covered">  if (pattern === '') <span class="cstat-no" title="statement not covered">return ''</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var re = ''</span>
-<span class="cstat-no" title="statement not covered" >  var hasMagic = !!options.nocase</span>
-<span class="cstat-no" title="statement not covered" >  var escaping = false</span>
+<span class="cstat-no" title="statement not covered">  var re = ''</span>
+<span class="cstat-no" title="statement not covered">  var hasMagic = !!options.nocase</span>
+<span class="cstat-no" title="statement not covered">  var escaping = false</span>
   // ? =&gt; one single character
-<span class="cstat-no" title="statement not covered" >  var patternListStack = []</span>
-<span class="cstat-no" title="statement not covered" >  var negativeLists = []</span>
-<span class="cstat-no" title="statement not covered" >  var stateChar</span>
-<span class="cstat-no" title="statement not covered" >  var inClass = false</span>
-<span class="cstat-no" title="statement not covered" >  var reClassStart = -1</span>
-<span class="cstat-no" title="statement not covered" >  var classStart = -1</span>
+<span class="cstat-no" title="statement not covered">  var patternListStack = []</span>
+<span class="cstat-no" title="statement not covered">  var negativeLists = []</span>
+<span class="cstat-no" title="statement not covered">  var stateChar</span>
+<span class="cstat-no" title="statement not covered">  var inClass = false</span>
+<span class="cstat-no" title="statement not covered">  var reClassStart = -1</span>
+<span class="cstat-no" title="statement not covered">  var classStart = -1</span>
   // . and .. never match anything that doesn't start with .,
   // even when options.dot is set.
-<span class="cstat-no" title="statement not covered" >  var patternStart = pattern.charAt(0) === '.' ? '' // anything</span>
+<span class="cstat-no" title="statement not covered">  var patternStart = pattern.charAt(0) === '.' ? '' // anything</span>
   // not (start or / followed by . or .. followed by / or end)
   : options.dot ? '(?!(?:^|\\\/)\\.{1,2}(?:$|\\\/))'
   : '(?!\\.)'
-<span class="cstat-no" title="statement not covered" >  var self = this</span>
+<span class="cstat-no" title="statement not covered">  var self = this</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function clearStateChar () {</span>
-<span class="cstat-no" title="statement not covered" >    if (stateChar) {</span>
+<span class="fstat-no" title="function not covered">  function clearStateChar () {</span>
+<span class="cstat-no" title="statement not covered">    if (stateChar) {</span>
       // we had some state-tracking character
       // that wasn't consumed by this pass.
-<span class="cstat-no" title="statement not covered" >      switch (stateChar) {</span>
+<span class="cstat-no" title="statement not covered">      switch (stateChar) {</span>
         case '*':
-<span class="cstat-no" title="statement not covered" >          re += star</span>
-<span class="cstat-no" title="statement not covered" >          hasMagic = true</span>
-<span class="cstat-no" title="statement not covered" >        break</span>
+<span class="cstat-no" title="statement not covered">          re += star</span>
+<span class="cstat-no" title="statement not covered">          hasMagic = true</span>
+<span class="cstat-no" title="statement not covered">        break</span>
         case '?':
-<span class="cstat-no" title="statement not covered" >          re += qmark</span>
-<span class="cstat-no" title="statement not covered" >          hasMagic = true</span>
-<span class="cstat-no" title="statement not covered" >        break</span>
+<span class="cstat-no" title="statement not covered">          re += qmark</span>
+<span class="cstat-no" title="statement not covered">          hasMagic = true</span>
+<span class="cstat-no" title="statement not covered">        break</span>
         default:
-<span class="cstat-no" title="statement not covered" >          re += '\\' + stateChar</span>
-<span class="cstat-no" title="statement not covered" >        break</span>
+<span class="cstat-no" title="statement not covered">          re += '\\' + stateChar</span>
+<span class="cstat-no" title="statement not covered">        break</span>
       }
-<span class="cstat-no" title="statement not covered" >      self.debug('clearStateChar %j %j', stateChar, re)</span>
-<span class="cstat-no" title="statement not covered" >      stateChar = false</span>
+<span class="cstat-no" title="statement not covered">      self.debug('clearStateChar %j %j', stateChar, re)</span>
+<span class="cstat-no" title="statement not covered">      stateChar = false</span>
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (var i = 0, len = pattern.length, c</span>
+<span class="cstat-no" title="statement not covered">  for (var i = 0, len = pattern.length, c</span>
     ; (i &lt; len) &amp;&amp; (c = pattern.charAt(i))
     ; i++) {
-<span class="cstat-no" title="statement not covered" >    this.debug('%s\t%s %s %j', pattern, i, re, c)</span>
+<span class="cstat-no" title="statement not covered">    this.debug('%s\t%s %s %j', pattern, i, re, c)</span>
 &nbsp;
     // skip over any that are escaped.
-<span class="cstat-no" title="statement not covered" >    if (escaping &amp;&amp; reSpecials[c]) {</span>
-<span class="cstat-no" title="statement not covered" >      re += '\\' + c</span>
-<span class="cstat-no" title="statement not covered" >      escaping = false</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">    if (escaping &amp;&amp; reSpecials[c]) {</span>
+<span class="cstat-no" title="statement not covered">      re += '\\' + c</span>
+<span class="cstat-no" title="statement not covered">      escaping = false</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    switch (c) {</span>
+<span class="cstat-no" title="statement not covered">    switch (c) {</span>
       case '/':
         // completely not allowed, even escaped.
         // Should already be path-split by now.
-<span class="cstat-no" title="statement not covered" >        return false</span>
+<span class="cstat-no" title="statement not covered">        return false</span>
 &nbsp;
       case '\\':
-<span class="cstat-no" title="statement not covered" >        clearStateChar()</span>
-<span class="cstat-no" title="statement not covered" >        escaping = true</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">        escaping = true</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       // the various stateChar values
       // for the "extglob" stuff.
@@ -2413,41 +2411,41 @@ var SUBPARSE = {}
       case '+':
       case '@':
       case '!':
-<span class="cstat-no" title="statement not covered" >        this.debug('%s\t%s %s %j &lt;-- stateChar', pattern, i, re, c)</span>
+<span class="cstat-no" title="statement not covered">        this.debug('%s\t%s %s %j &lt;-- stateChar', pattern, i, re, c)</span>
 &nbsp;
         // all of those are literals inside a class, except that
         // the glob [!a] means [^a] in regexp
-<span class="cstat-no" title="statement not covered" >        if (inClass) {</span>
-<span class="cstat-no" title="statement not covered" >          this.debug('  in class')</span>
-<span class="cstat-no" title="statement not covered" >          if (c === '!' &amp;&amp; i === classStart + 1) <span class="cstat-no" title="statement not covered" >c = '^'</span></span>
-<span class="cstat-no" title="statement not covered" >          re += c</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (inClass) {</span>
+<span class="cstat-no" title="statement not covered">          this.debug('  in class')</span>
+<span class="cstat-no" title="statement not covered">          if (c === '!' &amp;&amp; i === classStart + 1) <span class="cstat-no" title="statement not covered">c = '^'</span></span>
+<span class="cstat-no" title="statement not covered">          re += c</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
         // if we already have a stateChar, then it means
         // that there was something like ** or +? in there.
         // Handle the stateChar, then proceed with this one.
-<span class="cstat-no" title="statement not covered" >        self.debug('call clearStateChar %j', stateChar)</span>
-<span class="cstat-no" title="statement not covered" >        clearStateChar()</span>
-<span class="cstat-no" title="statement not covered" >        stateChar = c</span>
+<span class="cstat-no" title="statement not covered">        self.debug('call clearStateChar %j', stateChar)</span>
+<span class="cstat-no" title="statement not covered">        clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">        stateChar = c</span>
         // if extglob is disabled, then +(asdf|foo) isn't a thing.
         // just clear the statechar *now*, rather than even diving into
         // the patternList stuff.
-<span class="cstat-no" title="statement not covered" >        if (options.noext) <span class="cstat-no" title="statement not covered" >clearStateChar()</span></span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        if (options.noext) <span class="cstat-no" title="statement not covered">clearStateChar()</span></span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       case '(':
-<span class="cstat-no" title="statement not covered" >        if (inClass) {</span>
-<span class="cstat-no" title="statement not covered" >          re += '('</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (inClass) {</span>
+<span class="cstat-no" title="statement not covered">          re += '('</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (!stateChar) {</span>
-<span class="cstat-no" title="statement not covered" >          re += '\\('</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (!stateChar) {</span>
+<span class="cstat-no" title="statement not covered">          re += '\\('</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        patternListStack.push({</span>
+<span class="cstat-no" title="statement not covered">        patternListStack.push({</span>
           type: stateChar,
           start: i - 1,
           reStart: re.length,
@@ -2455,70 +2453,70 @@ var SUBPARSE = {}
           close: plTypes[stateChar].close
         })
         // negation is (?:(?!js)[^/]*)
-<span class="cstat-no" title="statement not covered" >        re += stateChar === '!' ? '(?:(?!(?:' : '(?:'</span>
-<span class="cstat-no" title="statement not covered" >        this.debug('plType %j %j', stateChar, re)</span>
-<span class="cstat-no" title="statement not covered" >        stateChar = false</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        re += stateChar === '!' ? '(?:(?!(?:' : '(?:'</span>
+<span class="cstat-no" title="statement not covered">        this.debug('plType %j %j', stateChar, re)</span>
+<span class="cstat-no" title="statement not covered">        stateChar = false</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       case ')':
-<span class="cstat-no" title="statement not covered" >        if (inClass || !patternListStack.length) {</span>
-<span class="cstat-no" title="statement not covered" >          re += '\\)'</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (inClass || !patternListStack.length) {</span>
+<span class="cstat-no" title="statement not covered">          re += '\\)'</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        clearStateChar()</span>
-<span class="cstat-no" title="statement not covered" >        hasMagic = true</span>
-<span class="cstat-no" title="statement not covered" >        var pl = patternListStack.pop()</span>
+<span class="cstat-no" title="statement not covered">        clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">        hasMagic = true</span>
+<span class="cstat-no" title="statement not covered">        var pl = patternListStack.pop()</span>
         // negation is (?:(?!js)[^/]*)
         // The others are (?:&lt;pattern&gt;)&lt;type&gt;
-<span class="cstat-no" title="statement not covered" >        re += pl.close</span>
-<span class="cstat-no" title="statement not covered" >        if (pl.type === '!') {</span>
-<span class="cstat-no" title="statement not covered" >          negativeLists.push(pl)</span>
+<span class="cstat-no" title="statement not covered">        re += pl.close</span>
+<span class="cstat-no" title="statement not covered">        if (pl.type === '!') {</span>
+<span class="cstat-no" title="statement not covered">          negativeLists.push(pl)</span>
         }
-<span class="cstat-no" title="statement not covered" >        pl.reEnd = re.length</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        pl.reEnd = re.length</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       case '|':
-<span class="cstat-no" title="statement not covered" >        if (inClass || !patternListStack.length || escaping) {</span>
-<span class="cstat-no" title="statement not covered" >          re += '\\|'</span>
-<span class="cstat-no" title="statement not covered" >          escaping = false</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (inClass || !patternListStack.length || escaping) {</span>
+<span class="cstat-no" title="statement not covered">          re += '\\|'</span>
+<span class="cstat-no" title="statement not covered">          escaping = false</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        clearStateChar()</span>
-<span class="cstat-no" title="statement not covered" >        re += '|'</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">        re += '|'</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       // these are mostly the same in regexp and glob
       case '[':
         // swallow any state-tracking char before the [
-<span class="cstat-no" title="statement not covered" >        clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">        clearStateChar()</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (inClass) {</span>
-<span class="cstat-no" title="statement not covered" >          re += '\\' + c</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (inClass) {</span>
+<span class="cstat-no" title="statement not covered">          re += '\\' + c</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        inClass = true</span>
-<span class="cstat-no" title="statement not covered" >        classStart = i</span>
-<span class="cstat-no" title="statement not covered" >        reClassStart = re.length</span>
-<span class="cstat-no" title="statement not covered" >        re += c</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        inClass = true</span>
+<span class="cstat-no" title="statement not covered">        classStart = i</span>
+<span class="cstat-no" title="statement not covered">        reClassStart = re.length</span>
+<span class="cstat-no" title="statement not covered">        re += c</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       case ']':
         //  a right bracket shall lose its special
         //  meaning and represent itself in
         //  a bracket expression if it occurs
         //  first in the list.  -- POSIX.2 2.8.3.2
-<span class="cstat-no" title="statement not covered" >        if (i === classStart + 1 || !inClass) {</span>
-<span class="cstat-no" title="statement not covered" >          re += '\\' + c</span>
-<span class="cstat-no" title="statement not covered" >          escaping = false</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">        if (i === classStart + 1 || !inClass) {</span>
+<span class="cstat-no" title="statement not covered">          re += '\\' + c</span>
+<span class="cstat-no" title="statement not covered">          escaping = false</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
         }
 &nbsp;
         // handle the case where we left a class open.
         // "[z-a]" is valid, equivalent to "\[z-a\]"
-<span class="cstat-no" title="statement not covered" >        if (inClass) {</span>
+<span class="cstat-no" title="statement not covered">        if (inClass) {</span>
           // split where the last [ was, make sure we don't have
           // an invalid re. if so, re-walk the contents of the
           // would-be class to re-translate any characters that
@@ -2526,53 +2524,53 @@ var SUBPARSE = {}
           // TODO: It would probably be faster to determine this
           // without a try/catch and a new RegExp, but it's tricky
           // to do safely.  For now, this is safe and works.
-<span class="cstat-no" title="statement not covered" >          var cs = pattern.substring(classStart + 1, i)</span>
-<span class="cstat-no" title="statement not covered" >          try {</span>
-<span class="cstat-no" title="statement not covered" >            RegExp('[' + cs + ']')</span>
+<span class="cstat-no" title="statement not covered">          var cs = pattern.substring(classStart + 1, i)</span>
+<span class="cstat-no" title="statement not covered">          try {</span>
+<span class="cstat-no" title="statement not covered">            RegExp('[' + cs + ']')</span>
           } catch (er) {
             // not a valid class!
-<span class="cstat-no" title="statement not covered" >            var sp = this.parse(cs, SUBPARSE)</span>
-<span class="cstat-no" title="statement not covered" >            re = re.substr(0, reClassStart) + '\\[' + sp[0] + '\\]'</span>
-<span class="cstat-no" title="statement not covered" >            hasMagic = hasMagic || sp[1]</span>
-<span class="cstat-no" title="statement not covered" >            inClass = false</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
+<span class="cstat-no" title="statement not covered">            var sp = this.parse(cs, SUBPARSE)</span>
+<span class="cstat-no" title="statement not covered">            re = re.substr(0, reClassStart) + '\\[' + sp[0] + '\\]'</span>
+<span class="cstat-no" title="statement not covered">            hasMagic = hasMagic || sp[1]</span>
+<span class="cstat-no" title="statement not covered">            inClass = false</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
           }
         }
 &nbsp;
         // finish up the class.
-<span class="cstat-no" title="statement not covered" >        hasMagic = true</span>
-<span class="cstat-no" title="statement not covered" >        inClass = false</span>
-<span class="cstat-no" title="statement not covered" >        re += c</span>
-<span class="cstat-no" title="statement not covered" >      continue</span>
+<span class="cstat-no" title="statement not covered">        hasMagic = true</span>
+<span class="cstat-no" title="statement not covered">        inClass = false</span>
+<span class="cstat-no" title="statement not covered">        re += c</span>
+<span class="cstat-no" title="statement not covered">      continue</span>
 &nbsp;
       default:
         // swallow any state char that wasn't consumed
-<span class="cstat-no" title="statement not covered" >        clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">        clearStateChar()</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (escaping) {</span>
+<span class="cstat-no" title="statement not covered">        if (escaping) {</span>
           // no need
-<span class="cstat-no" title="statement not covered" >          escaping = false</span>
-        } else <span class="cstat-no" title="statement not covered" >if (reSpecials[c]</span>
+<span class="cstat-no" title="statement not covered">          escaping = false</span>
+        } else <span class="cstat-no" title="statement not covered">if (reSpecials[c]</span>
           &amp;&amp; !(c === '^' &amp;&amp; inClass)) {
-<span class="cstat-no" title="statement not covered" >          re += '\\'</span>
+<span class="cstat-no" title="statement not covered">          re += '\\'</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        re += c</span>
+<span class="cstat-no" title="statement not covered">        re += c</span>
 &nbsp;
     } // switch
   } // for
 &nbsp;
   // handle the case where we left a class open.
   // "[abc" is valid, equivalent to "\[abc"
-<span class="cstat-no" title="statement not covered" >  if (inClass) {</span>
+<span class="cstat-no" title="statement not covered">  if (inClass) {</span>
     // split where the last [ was, and escape it
     // this is a huge pita.  We now have to re-walk
     // the contents of the would-be class to re-translate
     // any characters that were passed through as-is
-<span class="cstat-no" title="statement not covered" >    cs = pattern.substr(classStart + 1)</span>
-<span class="cstat-no" title="statement not covered" >    sp = this.parse(cs, SUBPARSE)</span>
-<span class="cstat-no" title="statement not covered" >    re = re.substr(0, reClassStart) + '\\[' + sp[0]</span>
-<span class="cstat-no" title="statement not covered" >    hasMagic = hasMagic || sp[1]</span>
+<span class="cstat-no" title="statement not covered">    cs = pattern.substr(classStart + 1)</span>
+<span class="cstat-no" title="statement not covered">    sp = this.parse(cs, SUBPARSE)</span>
+<span class="cstat-no" title="statement not covered">    re = re.substr(0, reClassStart) + '\\[' + sp[0]</span>
+<span class="cstat-no" title="statement not covered">    hasMagic = hasMagic || sp[1]</span>
   }
 &nbsp;
   // handle the case where we had a +( thing at the *end*
@@ -2581,14 +2579,14 @@ var SUBPARSE = {}
   // and escape any | chars that were passed through as-is for the regexp.
   // Go through and escape them, taking care not to double-escape any
   // | chars that were already escaped.
-<span class="cstat-no" title="statement not covered" >  for (pl = patternListStack.pop(); pl; pl = patternListStack.pop()) {</span>
-<span class="cstat-no" title="statement not covered" >    var tail = re.slice(pl.reStart + pl.open.length)</span>
-<span class="cstat-no" title="statement not covered" >    this.debug('setting tail', re, pl)</span>
+<span class="cstat-no" title="statement not covered">  for (pl = patternListStack.pop(); pl; pl = patternListStack.pop()) {</span>
+<span class="cstat-no" title="statement not covered">    var tail = re.slice(pl.reStart + pl.open.length)</span>
+<span class="cstat-no" title="statement not covered">    this.debug('setting tail', re, pl)</span>
     // maybe some even number of \, then maybe 1 \, followed by a |
-<span class="cstat-no" title="statement not covered" >    tail = tail.replace(/((?:\\{2}){0,64})(\\?)\|/g, <span class="fstat-no" title="function not covered" >function (_, $1, $2) {</span></span>
-<span class="cstat-no" title="statement not covered" >      if (!$2) {</span>
+<span class="cstat-no" title="statement not covered">    tail = tail.replace(/((?:\\{2}){0,64})(\\?)\|/g, <span class="fstat-no" title="function not covered">function (_, $1, $2) {</span></span>
+<span class="cstat-no" title="statement not covered">      if (!$2) {</span>
         // the | isn't already escaped, so escape it.
-<span class="cstat-no" title="statement not covered" >        $2 = '\\'</span>
+<span class="cstat-no" title="statement not covered">        $2 = '\\'</span>
       }
 &nbsp;
       // need to escape all those slashes *again*, without escaping the
@@ -2597,32 +2595,32 @@ var SUBPARSE = {}
       // it exactly after itself.  That's why this trick works.
       //
       // I am sorry that you have to see this.
-<span class="cstat-no" title="statement not covered" >      return $1 + $1 + $2 + '|'</span>
+<span class="cstat-no" title="statement not covered">      return $1 + $1 + $2 + '|'</span>
     })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this.debug('tail=%j\n   %s', tail, tail, pl, re)</span>
-<span class="cstat-no" title="statement not covered" >    var t = pl.type === '*' ? star</span>
+<span class="cstat-no" title="statement not covered">    this.debug('tail=%j\n   %s', tail, tail, pl, re)</span>
+<span class="cstat-no" title="statement not covered">    var t = pl.type === '*' ? star</span>
       : pl.type === '?' ? qmark
       : '\\' + pl.type
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    hasMagic = true</span>
-<span class="cstat-no" title="statement not covered" >    re = re.slice(0, pl.reStart) + t + '\\(' + tail</span>
+<span class="cstat-no" title="statement not covered">    hasMagic = true</span>
+<span class="cstat-no" title="statement not covered">    re = re.slice(0, pl.reStart) + t + '\\(' + tail</span>
   }
 &nbsp;
   // handle trailing things that only matter at the very end.
-<span class="cstat-no" title="statement not covered" >  clearStateChar()</span>
-<span class="cstat-no" title="statement not covered" >  if (escaping) {</span>
+<span class="cstat-no" title="statement not covered">  clearStateChar()</span>
+<span class="cstat-no" title="statement not covered">  if (escaping) {</span>
     // trailing \\
-<span class="cstat-no" title="statement not covered" >    re += '\\\\'</span>
+<span class="cstat-no" title="statement not covered">    re += '\\\\'</span>
   }
 &nbsp;
   // only need to apply the nodot start if the re starts with
   // something that could conceivably capture a dot
-<span class="cstat-no" title="statement not covered" >  var addPatternStart = false</span>
-<span class="cstat-no" title="statement not covered" >  switch (re.charAt(0)) {</span>
+<span class="cstat-no" title="statement not covered">  var addPatternStart = false</span>
+<span class="cstat-no" title="statement not covered">  switch (re.charAt(0)) {</span>
     case '.':
     case '[':
-    case '(': <span class="cstat-no" title="statement not covered" >addPatternStart = true</span>
+    case '(': <span class="cstat-no" title="statement not covered">addPatternStart = true</span>
   }
 &nbsp;
   // Hack to work around lack of negative lookbehind in JS
@@ -2630,81 +2628,81 @@ var SUBPARSE = {}
   // like 'a.xyz.yz' doesn't match.  So, the first negative
   // lookahead, has to look ALL the way ahead, to the end of
   // the pattern.
-<span class="cstat-no" title="statement not covered" >  for (var n = negativeLists.length - 1; n &gt; -1; n--) {</span>
-<span class="cstat-no" title="statement not covered" >    var nl = negativeLists[n]</span>
+<span class="cstat-no" title="statement not covered">  for (var n = negativeLists.length - 1; n &gt; -1; n--) {</span>
+<span class="cstat-no" title="statement not covered">    var nl = negativeLists[n]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var nlBefore = re.slice(0, nl.reStart)</span>
-<span class="cstat-no" title="statement not covered" >    var nlFirst = re.slice(nl.reStart, nl.reEnd - 8)</span>
-<span class="cstat-no" title="statement not covered" >    var nlLast = re.slice(nl.reEnd - 8, nl.reEnd)</span>
-<span class="cstat-no" title="statement not covered" >    var nlAfter = re.slice(nl.reEnd)</span>
+<span class="cstat-no" title="statement not covered">    var nlBefore = re.slice(0, nl.reStart)</span>
+<span class="cstat-no" title="statement not covered">    var nlFirst = re.slice(nl.reStart, nl.reEnd - 8)</span>
+<span class="cstat-no" title="statement not covered">    var nlLast = re.slice(nl.reEnd - 8, nl.reEnd)</span>
+<span class="cstat-no" title="statement not covered">    var nlAfter = re.slice(nl.reEnd)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    nlLast += nlAfter</span>
+<span class="cstat-no" title="statement not covered">    nlLast += nlAfter</span>
 &nbsp;
     // Handle nested stuff like *(*.js|!(*.json)), where open parens
     // mean that we should *not* include the ) in the bit that is considered
     // "after" the negated section.
-<span class="cstat-no" title="statement not covered" >    var openParensBefore = nlBefore.split('(').length - 1</span>
-<span class="cstat-no" title="statement not covered" >    var cleanAfter = nlAfter</span>
-<span class="cstat-no" title="statement not covered" >    for (i = 0; i &lt; openParensBefore; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      cleanAfter = cleanAfter.replace(/\)[+*?]?/, '')</span>
+<span class="cstat-no" title="statement not covered">    var openParensBefore = nlBefore.split('(').length - 1</span>
+<span class="cstat-no" title="statement not covered">    var cleanAfter = nlAfter</span>
+<span class="cstat-no" title="statement not covered">    for (i = 0; i &lt; openParensBefore; i++) {</span>
+<span class="cstat-no" title="statement not covered">      cleanAfter = cleanAfter.replace(/\)[+*?]?/, '')</span>
     }
-<span class="cstat-no" title="statement not covered" >    nlAfter = cleanAfter</span>
+<span class="cstat-no" title="statement not covered">    nlAfter = cleanAfter</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var dollar = ''</span>
-<span class="cstat-no" title="statement not covered" >    if (nlAfter === '' &amp;&amp; isSub !== SUBPARSE) {</span>
-<span class="cstat-no" title="statement not covered" >      dollar = '$'</span>
+<span class="cstat-no" title="statement not covered">    var dollar = ''</span>
+<span class="cstat-no" title="statement not covered">    if (nlAfter === '' &amp;&amp; isSub !== SUBPARSE) {</span>
+<span class="cstat-no" title="statement not covered">      dollar = '$'</span>
     }
-<span class="cstat-no" title="statement not covered" >    var newRe = nlBefore + nlFirst + nlAfter + dollar + nlLast</span>
-<span class="cstat-no" title="statement not covered" >    re = newRe</span>
+<span class="cstat-no" title="statement not covered">    var newRe = nlBefore + nlFirst + nlAfter + dollar + nlLast</span>
+<span class="cstat-no" title="statement not covered">    re = newRe</span>
   }
 &nbsp;
   // if the re is not "" at this point, then we need to make sure
   // it doesn't match against an empty path part.
   // Otherwise a/* will match a/, which it should not.
-<span class="cstat-no" title="statement not covered" >  if (re !== '' &amp;&amp; hasMagic) {</span>
-<span class="cstat-no" title="statement not covered" >    re = '(?=.)' + re</span>
+<span class="cstat-no" title="statement not covered">  if (re !== '' &amp;&amp; hasMagic) {</span>
+<span class="cstat-no" title="statement not covered">    re = '(?=.)' + re</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (addPatternStart) {</span>
-<span class="cstat-no" title="statement not covered" >    re = patternStart + re</span>
+<span class="cstat-no" title="statement not covered">  if (addPatternStart) {</span>
+<span class="cstat-no" title="statement not covered">    re = patternStart + re</span>
   }
 &nbsp;
   // parsing just a piece of a larger pattern.
-<span class="cstat-no" title="statement not covered" >  if (isSub === SUBPARSE) {</span>
-<span class="cstat-no" title="statement not covered" >    return [re, hasMagic]</span>
+<span class="cstat-no" title="statement not covered">  if (isSub === SUBPARSE) {</span>
+<span class="cstat-no" title="statement not covered">    return [re, hasMagic]</span>
   }
 &nbsp;
   // skip the regexp for non-magical patterns
   // unescape anything in it, though, so that it'll be
   // an exact match against a file etc.
-<span class="cstat-no" title="statement not covered" >  if (!hasMagic) {</span>
-<span class="cstat-no" title="statement not covered" >    return globUnescape(pattern)</span>
+<span class="cstat-no" title="statement not covered">  if (!hasMagic) {</span>
+<span class="cstat-no" title="statement not covered">    return globUnescape(pattern)</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var flags = options.nocase ? 'i' : ''</span>
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    var regExp = new RegExp('^' + re + '$', flags)</span>
+<span class="cstat-no" title="statement not covered">  var flags = options.nocase ? 'i' : ''</span>
+<span class="cstat-no" title="statement not covered">  try {</span>
+<span class="cstat-no" title="statement not covered">    var regExp = new RegExp('^' + re + '$', flags)</span>
   } catch (er) {
     // If it was an invalid regular expression, then it can't match
     // anything.  This trick looks for a character after the end of
     // the string, which is of course impossible, except in multi-line
     // mode, but it's not a /m regex.
-<span class="cstat-no" title="statement not covered" >    return new RegExp('$.')</span>
+<span class="cstat-no" title="statement not covered">    return new RegExp('$.')</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  regExp._glob = pattern</span>
-<span class="cstat-no" title="statement not covered" >  regExp._src = re</span>
+<span class="cstat-no" title="statement not covered">  regExp._glob = pattern</span>
+<span class="cstat-no" title="statement not covered">  regExp._src = re</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return regExp</span>
+<span class="cstat-no" title="statement not covered">  return regExp</span>
 }
 &nbsp;
-minimatch.makeRe = <span class="fstat-no" title="function not covered" >function (pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  return new Minimatch(pattern, options || {}).makeRe()</span>
+minimatch.makeRe = <span class="fstat-no" title="function not covered">function (pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  return new Minimatch(pattern, options || {}).makeRe()</span>
 }
 &nbsp;
 Minimatch.prototype.makeRe = makeRe
-<span class="fstat-no" title="function not covered" >function makeRe () {</span>
-<span class="cstat-no" title="statement not covered" >  if (this.regexp || this.regexp === false) <span class="cstat-no" title="statement not covered" >return this.regexp</span></span>
+<span class="fstat-no" title="function not covered">function makeRe () {</span>
+<span class="cstat-no" title="statement not covered">  if (this.regexp || this.regexp === false) <span class="cstat-no" title="statement not covered">return this.regexp</span></span>
 &nbsp;
   // at this point, this.set is a 2d array of partial
   // pattern strings, or "**".
@@ -2712,22 +2710,22 @@ Minimatch.prototype.makeRe = makeRe
   // It's better to use .match().  This function shouldn't
   // be used, really, but it's pretty convenient sometimes,
   // when you just want to work with a regex.
-<span class="cstat-no" title="statement not covered" >  var set = this.set</span>
+<span class="cstat-no" title="statement not covered">  var set = this.set</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!set.length) {</span>
-<span class="cstat-no" title="statement not covered" >    this.regexp = false</span>
-<span class="cstat-no" title="statement not covered" >    return this.regexp</span>
+<span class="cstat-no" title="statement not covered">  if (!set.length) {</span>
+<span class="cstat-no" title="statement not covered">    this.regexp = false</span>
+<span class="cstat-no" title="statement not covered">    return this.regexp</span>
   }
-<span class="cstat-no" title="statement not covered" >  var options = this.options</span>
+<span class="cstat-no" title="statement not covered">  var options = this.options</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var twoStar = options.noglobstar ? star</span>
+<span class="cstat-no" title="statement not covered">  var twoStar = options.noglobstar ? star</span>
     : options.dot ? twoStarDot
     : twoStarNoDot
-<span class="cstat-no" title="statement not covered" >  var flags = options.nocase ? 'i' : ''</span>
+<span class="cstat-no" title="statement not covered">  var flags = options.nocase ? 'i' : ''</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var re = set.map(<span class="fstat-no" title="function not covered" >function (pattern) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return pattern.map(<span class="fstat-no" title="function not covered" >function (p) {</span></span>
-<span class="cstat-no" title="statement not covered" >      return (p === GLOBSTAR) ? twoStar</span>
+<span class="cstat-no" title="statement not covered">  var re = set.map(<span class="fstat-no" title="function not covered">function (pattern) {</span></span>
+<span class="cstat-no" title="statement not covered">    return pattern.map(<span class="fstat-no" title="function not covered">function (p) {</span></span>
+<span class="cstat-no" title="statement not covered">      return (p === GLOBSTAR) ? twoStar</span>
       : (typeof p === 'string') ? regExpEscape(p)
       : p._src
     }).join('\\\/')
@@ -2735,85 +2733,85 @@ Minimatch.prototype.makeRe = makeRe
 &nbsp;
   // must match entire pattern
   // ending in a * or ** will make it less strict.
-<span class="cstat-no" title="statement not covered" >  re = '^(?:' + re + ')$'</span>
+<span class="cstat-no" title="statement not covered">  re = '^(?:' + re + ')$'</span>
 &nbsp;
   // can match anything, as long as it's not this.
-<span class="cstat-no" title="statement not covered" >  if (this.negate) <span class="cstat-no" title="statement not covered" >re = '^(?!' + re + ').*$'</span></span>
+<span class="cstat-no" title="statement not covered">  if (this.negate) <span class="cstat-no" title="statement not covered">re = '^(?!' + re + ').*$'</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    this.regexp = new RegExp(re, flags)</span>
+<span class="cstat-no" title="statement not covered">  try {</span>
+<span class="cstat-no" title="statement not covered">    this.regexp = new RegExp(re, flags)</span>
   } catch (ex) {
-<span class="cstat-no" title="statement not covered" >    this.regexp = false</span>
+<span class="cstat-no" title="statement not covered">    this.regexp = false</span>
   }
-<span class="cstat-no" title="statement not covered" >  return this.regexp</span>
+<span class="cstat-no" title="statement not covered">  return this.regexp</span>
 }
 &nbsp;
-minimatch.match = <span class="fstat-no" title="function not covered" >function (list, pattern, options) {</span>
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >  var mm = new Minimatch(pattern, options)</span>
-<span class="cstat-no" title="statement not covered" >  list = list.filter(<span class="fstat-no" title="function not covered" >function (f) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return mm.match(f)</span>
+minimatch.match = <span class="fstat-no" title="function not covered">function (list, pattern, options) {</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
+<span class="cstat-no" title="statement not covered">  var mm = new Minimatch(pattern, options)</span>
+<span class="cstat-no" title="statement not covered">  list = list.filter(<span class="fstat-no" title="function not covered">function (f) {</span></span>
+<span class="cstat-no" title="statement not covered">    return mm.match(f)</span>
   })
-<span class="cstat-no" title="statement not covered" >  if (mm.options.nonull &amp;&amp; !list.length) {</span>
-<span class="cstat-no" title="statement not covered" >    list.push(pattern)</span>
+<span class="cstat-no" title="statement not covered">  if (mm.options.nonull &amp;&amp; !list.length) {</span>
+<span class="cstat-no" title="statement not covered">    list.push(pattern)</span>
   }
-<span class="cstat-no" title="statement not covered" >  return list</span>
+<span class="cstat-no" title="statement not covered">  return list</span>
 }
 &nbsp;
 Minimatch.prototype.match = match
-<span class="fstat-no" title="function not covered" >function match (f, partial) {</span>
-<span class="cstat-no" title="statement not covered" >  this.debug('match', f, this.pattern)</span>
+<span class="fstat-no" title="function not covered">function match (f, partial) {</span>
+<span class="cstat-no" title="statement not covered">  this.debug('match', f, this.pattern)</span>
   // short-circuit in the case of busted things.
   // comments, etc.
-<span class="cstat-no" title="statement not covered" >  if (this.comment) <span class="cstat-no" title="statement not covered" >return false</span></span>
-<span class="cstat-no" title="statement not covered" >  if (this.empty) <span class="cstat-no" title="statement not covered" >return f === ''</span></span>
+<span class="cstat-no" title="statement not covered">  if (this.comment) <span class="cstat-no" title="statement not covered">return false</span></span>
+<span class="cstat-no" title="statement not covered">  if (this.empty) <span class="cstat-no" title="statement not covered">return f === ''</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (f === '/' &amp;&amp; partial) <span class="cstat-no" title="statement not covered" >return true</span></span>
+<span class="cstat-no" title="statement not covered">  if (f === '/' &amp;&amp; partial) <span class="cstat-no" title="statement not covered">return true</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var options = this.options</span>
+<span class="cstat-no" title="statement not covered">  var options = this.options</span>
 &nbsp;
   // windows: need to use /, not \
-<span class="cstat-no" title="statement not covered" >  if (path.sep !== '/') {</span>
-<span class="cstat-no" title="statement not covered" >    f = f.split(path.sep).join('/')</span>
+<span class="cstat-no" title="statement not covered">  if (path.sep !== '/') {</span>
+<span class="cstat-no" title="statement not covered">    f = f.split(path.sep).join('/')</span>
   }
 &nbsp;
   // treat the test path as a set of pathparts.
-<span class="cstat-no" title="statement not covered" >  f = f.split(slashSplit)</span>
-<span class="cstat-no" title="statement not covered" >  this.debug(this.pattern, 'split', f)</span>
+<span class="cstat-no" title="statement not covered">  f = f.split(slashSplit)</span>
+<span class="cstat-no" title="statement not covered">  this.debug(this.pattern, 'split', f)</span>
 &nbsp;
   // just ONE of the pattern sets in this.set needs to match
   // in order for it to be valid.  If negating, then just one
   // match means that we have failed.
   // Either way, return on the first hit.
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var set = this.set</span>
-<span class="cstat-no" title="statement not covered" >  this.debug(this.pattern, 'set', set)</span>
+<span class="cstat-no" title="statement not covered">  var set = this.set</span>
+<span class="cstat-no" title="statement not covered">  this.debug(this.pattern, 'set', set)</span>
 &nbsp;
   // Find the basename of the path by looking for the last non-empty segment
-<span class="cstat-no" title="statement not covered" >  var filename</span>
-<span class="cstat-no" title="statement not covered" >  var i</span>
-<span class="cstat-no" title="statement not covered" >  for (i = f.length - 1; i &gt;= 0; i--) {</span>
-<span class="cstat-no" title="statement not covered" >    filename = f[i]</span>
-<span class="cstat-no" title="statement not covered" >    if (filename) <span class="cstat-no" title="statement not covered" >break</span></span>
+<span class="cstat-no" title="statement not covered">  var filename</span>
+<span class="cstat-no" title="statement not covered">  var i</span>
+<span class="cstat-no" title="statement not covered">  for (i = f.length - 1; i &gt;= 0; i--) {</span>
+<span class="cstat-no" title="statement not covered">    filename = f[i]</span>
+<span class="cstat-no" title="statement not covered">    if (filename) <span class="cstat-no" title="statement not covered">break</span></span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (i = 0; i &lt; set.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >    var pattern = set[i]</span>
-<span class="cstat-no" title="statement not covered" >    var file = f</span>
-<span class="cstat-no" title="statement not covered" >    if (options.matchBase &amp;&amp; pattern.length === 1) {</span>
-<span class="cstat-no" title="statement not covered" >      file = [filename]</span>
+<span class="cstat-no" title="statement not covered">  for (i = 0; i &lt; set.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">    var pattern = set[i]</span>
+<span class="cstat-no" title="statement not covered">    var file = f</span>
+<span class="cstat-no" title="statement not covered">    if (options.matchBase &amp;&amp; pattern.length === 1) {</span>
+<span class="cstat-no" title="statement not covered">      file = [filename]</span>
     }
-<span class="cstat-no" title="statement not covered" >    var hit = this.matchOne(file, pattern, partial)</span>
-<span class="cstat-no" title="statement not covered" >    if (hit) {</span>
-<span class="cstat-no" title="statement not covered" >      if (options.flipNegate) <span class="cstat-no" title="statement not covered" >return true</span></span>
-<span class="cstat-no" title="statement not covered" >      return !this.negate</span>
+<span class="cstat-no" title="statement not covered">    var hit = this.matchOne(file, pattern, partial)</span>
+<span class="cstat-no" title="statement not covered">    if (hit) {</span>
+<span class="cstat-no" title="statement not covered">      if (options.flipNegate) <span class="cstat-no" title="statement not covered">return true</span></span>
+<span class="cstat-no" title="statement not covered">      return !this.negate</span>
     }
   }
 &nbsp;
   // didn't get any hits.  this is success if it's a negative
   // pattern, failure otherwise.
-<span class="cstat-no" title="statement not covered" >  if (options.flipNegate) <span class="cstat-no" title="statement not covered" >return false</span></span>
-<span class="cstat-no" title="statement not covered" >  return this.negate</span>
+<span class="cstat-no" title="statement not covered">  if (options.flipNegate) <span class="cstat-no" title="statement not covered">return false</span></span>
+<span class="cstat-no" title="statement not covered">  return this.negate</span>
 }
 &nbsp;
 // set partial to true to test if, for example,
@@ -2821,32 +2819,32 @@ Minimatch.prototype.match = match
 // Partial means, if you run out of file before you run
 // out of pattern, then that's fine, as long as all
 // the parts match.
-Minimatch.prototype.matchOne = <span class="fstat-no" title="function not covered" >function (file, pattern, partial) {</span>
-<span class="cstat-no" title="statement not covered" >  var options = this.options</span>
+Minimatch.prototype.matchOne = <span class="fstat-no" title="function not covered">function (file, pattern, partial) {</span>
+<span class="cstat-no" title="statement not covered">  var options = this.options</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.debug('matchOne',</span>
+<span class="cstat-no" title="statement not covered">  this.debug('matchOne',</span>
     { 'this': this, file: file, pattern: pattern })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.debug('matchOne', file.length, pattern.length)</span>
+<span class="cstat-no" title="statement not covered">  this.debug('matchOne', file.length, pattern.length)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (var fi = 0,</span>
+<span class="cstat-no" title="statement not covered">  for (var fi = 0,</span>
       pi = 0,
       fl = file.length,
       pl = pattern.length
       ; (fi &lt; fl) &amp;&amp; (pi &lt; pl)
       ; fi++, pi++) {
-<span class="cstat-no" title="statement not covered" >    this.debug('matchOne loop')</span>
-<span class="cstat-no" title="statement not covered" >    var p = pattern[pi]</span>
-<span class="cstat-no" title="statement not covered" >    var f = file[fi]</span>
+<span class="cstat-no" title="statement not covered">    this.debug('matchOne loop')</span>
+<span class="cstat-no" title="statement not covered">    var p = pattern[pi]</span>
+<span class="cstat-no" title="statement not covered">    var f = file[fi]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this.debug(pattern, p, f)</span>
+<span class="cstat-no" title="statement not covered">    this.debug(pattern, p, f)</span>
 &nbsp;
     // should be impossible.
     // some invalid regexp stuff in the set.
-<span class="cstat-no" title="statement not covered" >    if (p === false) <span class="cstat-no" title="statement not covered" >return false</span></span>
+<span class="cstat-no" title="statement not covered">    if (p === false) <span class="cstat-no" title="statement not covered">return false</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (p === GLOBSTAR) {</span>
-<span class="cstat-no" title="statement not covered" >      this.debug('GLOBSTAR', [pattern, p, f])</span>
+<span class="cstat-no" title="statement not covered">    if (p === GLOBSTAR) {</span>
+<span class="cstat-no" title="statement not covered">      this.debug('GLOBSTAR', [pattern, p, f])</span>
 &nbsp;
       // "**"
       // a/**/b/**/c would match the following:
@@ -2870,77 +2868,77 @@ Minimatch.prototype.matchOne = <span class="fstat-no" title="function not covere
       //       - matchOne(y/z/c, c) -&gt; no
       //       - matchOne(z/c, c) -&gt; no
       //       - matchOne(c, c) yes, hit
-<span class="cstat-no" title="statement not covered" >      var fr = fi</span>
-<span class="cstat-no" title="statement not covered" >      var pr = pi + 1</span>
-<span class="cstat-no" title="statement not covered" >      if (pr === pl) {</span>
-<span class="cstat-no" title="statement not covered" >        this.debug('** at the end')</span>
+<span class="cstat-no" title="statement not covered">      var fr = fi</span>
+<span class="cstat-no" title="statement not covered">      var pr = pi + 1</span>
+<span class="cstat-no" title="statement not covered">      if (pr === pl) {</span>
+<span class="cstat-no" title="statement not covered">        this.debug('** at the end')</span>
         // a ** at the end will just swallow the rest.
         // We have found a match.
         // however, it will not swallow /.x, unless
         // options.dot is set.
         // . and .. are *never* matched by **, for explosively
         // exponential reasons.
-<span class="cstat-no" title="statement not covered" >        for (; fi &lt; fl; fi++) {</span>
-<span class="cstat-no" title="statement not covered" >          if (file[fi] === '.' || file[fi] === '..' ||</span>
-            (!options.dot &amp;&amp; file[fi].charAt(0) === '.')) <span class="cstat-no" title="statement not covered" >return false</span>
+<span class="cstat-no" title="statement not covered">        for (; fi &lt; fl; fi++) {</span>
+<span class="cstat-no" title="statement not covered">          if (file[fi] === '.' || file[fi] === '..' ||</span>
+            (!options.dot &amp;&amp; file[fi].charAt(0) === '.')) <span class="cstat-no" title="statement not covered">return false</span>
         }
-<span class="cstat-no" title="statement not covered" >        return true</span>
+<span class="cstat-no" title="statement not covered">        return true</span>
       }
 &nbsp;
       // ok, let's see if we can swallow whatever we can.
-<span class="cstat-no" title="statement not covered" >      while (fr &lt; fl) {</span>
-<span class="cstat-no" title="statement not covered" >        var swallowee = file[fr]</span>
+<span class="cstat-no" title="statement not covered">      while (fr &lt; fl) {</span>
+<span class="cstat-no" title="statement not covered">        var swallowee = file[fr]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        this.debug('\nglobstar while', file, fr, pattern, pr, swallowee)</span>
+<span class="cstat-no" title="statement not covered">        this.debug('\nglobstar while', file, fr, pattern, pr, swallowee)</span>
 &nbsp;
         // XXX remove this slice.  Just pass the start index.
-<span class="cstat-no" title="statement not covered" >        if (this.matchOne(file.slice(fr), pattern.slice(pr), partial)) {</span>
-<span class="cstat-no" title="statement not covered" >          this.debug('globstar found match!', fr, fl, swallowee)</span>
+<span class="cstat-no" title="statement not covered">        if (this.matchOne(file.slice(fr), pattern.slice(pr), partial)) {</span>
+<span class="cstat-no" title="statement not covered">          this.debug('globstar found match!', fr, fl, swallowee)</span>
           // found a match.
-<span class="cstat-no" title="statement not covered" >          return true</span>
+<span class="cstat-no" title="statement not covered">          return true</span>
         } else {
           // can't swallow "." or ".." ever.
           // can only swallow ".foo" when explicitly asked.
-<span class="cstat-no" title="statement not covered" >          if (swallowee === '.' || swallowee === '..' ||</span>
+<span class="cstat-no" title="statement not covered">          if (swallowee === '.' || swallowee === '..' ||</span>
             (!options.dot &amp;&amp; swallowee.charAt(0) === '.')) {
-<span class="cstat-no" title="statement not covered" >            this.debug('dot detected!', file, fr, pattern, pr)</span>
-<span class="cstat-no" title="statement not covered" >            break</span>
+<span class="cstat-no" title="statement not covered">            this.debug('dot detected!', file, fr, pattern, pr)</span>
+<span class="cstat-no" title="statement not covered">            break</span>
           }
 &nbsp;
           // ** swallows a segment, and continue.
-<span class="cstat-no" title="statement not covered" >          this.debug('globstar swallow a segment, and continue')</span>
-<span class="cstat-no" title="statement not covered" >          fr++</span>
+<span class="cstat-no" title="statement not covered">          this.debug('globstar swallow a segment, and continue')</span>
+<span class="cstat-no" title="statement not covered">          fr++</span>
         }
       }
 &nbsp;
       // no match was found.
       // However, in partial mode, we can't say this is necessarily over.
       // If there's more *pattern* left, then
-<span class="cstat-no" title="statement not covered" >      if (partial) {</span>
+<span class="cstat-no" title="statement not covered">      if (partial) {</span>
         // ran out of file
-<span class="cstat-no" title="statement not covered" >        this.debug('\n&gt;&gt;&gt; no match, partial?', file, fr, pattern, pr)</span>
-<span class="cstat-no" title="statement not covered" >        if (fr === fl) <span class="cstat-no" title="statement not covered" >return true</span></span>
+<span class="cstat-no" title="statement not covered">        this.debug('\n&gt;&gt;&gt; no match, partial?', file, fr, pattern, pr)</span>
+<span class="cstat-no" title="statement not covered">        if (fr === fl) <span class="cstat-no" title="statement not covered">return true</span></span>
       }
-<span class="cstat-no" title="statement not covered" >      return false</span>
+<span class="cstat-no" title="statement not covered">      return false</span>
     }
 &nbsp;
     // something other than **
     // non-magic patterns just have to match exactly
     // patterns with magic have been turned into regexps.
-<span class="cstat-no" title="statement not covered" >    var hit</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof p === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >      if (options.nocase) {</span>
-<span class="cstat-no" title="statement not covered" >        hit = f.toLowerCase() === p.toLowerCase()</span>
+<span class="cstat-no" title="statement not covered">    var hit</span>
+<span class="cstat-no" title="statement not covered">    if (typeof p === 'string') {</span>
+<span class="cstat-no" title="statement not covered">      if (options.nocase) {</span>
+<span class="cstat-no" title="statement not covered">        hit = f.toLowerCase() === p.toLowerCase()</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        hit = f === p</span>
+<span class="cstat-no" title="statement not covered">        hit = f === p</span>
       }
-<span class="cstat-no" title="statement not covered" >      this.debug('string match', p, f, hit)</span>
+<span class="cstat-no" title="statement not covered">      this.debug('string match', p, f, hit)</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      hit = f.match(p)</span>
-<span class="cstat-no" title="statement not covered" >      this.debug('pattern match', p, f, hit)</span>
+<span class="cstat-no" title="statement not covered">      hit = f.match(p)</span>
+<span class="cstat-no" title="statement not covered">      this.debug('pattern match', p, f, hit)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (!hit) <span class="cstat-no" title="statement not covered" >return false</span></span>
+<span class="cstat-no" title="statement not covered">    if (!hit) <span class="cstat-no" title="statement not covered">return false</span></span>
   }
 &nbsp;
   // Note: ending in / means that we'll get a final ""
@@ -2955,42 +2953,43 @@ Minimatch.prototype.matchOne = <span class="fstat-no" title="function not covere
   // However, a/b/ should still satisfy a/*
 &nbsp;
   // now either we fell off the end of the pattern, or we're done.
-<span class="cstat-no" title="statement not covered" >  if (fi === fl &amp;&amp; pi === pl) {</span>
+<span class="cstat-no" title="statement not covered">  if (fi === fl &amp;&amp; pi === pl) {</span>
     // ran out of pattern and filename at the same time.
     // an exact hit!
-<span class="cstat-no" title="statement not covered" >    return true</span>
-  } else <span class="cstat-no" title="statement not covered" >if (fi === fl) {</span>
+<span class="cstat-no" title="statement not covered">    return true</span>
+  } else <span class="cstat-no" title="statement not covered">if (fi === fl) {</span>
     // ran out of file, but still had pattern left.
     // this is ok if we're doing the match as part of
     // a glob fs traversal.
-<span class="cstat-no" title="statement not covered" >    return partial</span>
-  } else <span class="cstat-no" title="statement not covered" >if (pi === pl) {</span>
+<span class="cstat-no" title="statement not covered">    return partial</span>
+  } else <span class="cstat-no" title="statement not covered">if (pi === pl) {</span>
     // ran out of pattern, still have file left.
     // this is only acceptable if we're on the very last
     // empty segment of a file with a trailing slash.
     // a/* should match a/b/
-<span class="cstat-no" title="statement not covered" >    var emptyFileEnd = (fi === fl - 1) &amp;&amp; (file[fi] === '')</span>
-<span class="cstat-no" title="statement not covered" >    return emptyFileEnd</span>
+<span class="cstat-no" title="statement not covered">    var emptyFileEnd = (fi === fl - 1) &amp;&amp; (file[fi] === '')</span>
+<span class="cstat-no" title="statement not covered">    return emptyFileEnd</span>
   }
 &nbsp;
   // should be unreachable.
-<span class="cstat-no" title="statement not covered" >  throw new Error('wtf?')</span>
+<span class="cstat-no" title="statement not covered">  throw new Error('wtf?')</span>
 }
 &nbsp;
 // replace stuff like \* with *
-<span class="fstat-no" title="function not covered" >function globUnescape (s) {</span>
-<span class="cstat-no" title="statement not covered" >  return s.replace(/\\(.)/g, '$1')</span>
+<span class="fstat-no" title="function not covered">function globUnescape (s) {</span>
+<span class="cstat-no" title="statement not covered">  return s.replace(/\\(.)/g, '$1')</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function regExpEscape (s) {</span>
-<span class="cstat-no" title="statement not covered" >  return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&amp;')</span>
+<span class="fstat-no" title="function not covered">function regExpEscape (s) {</span>
+<span class="cstat-no" title="statement not covered">  return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&amp;')</span>
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 08:47:26 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 11:36:36 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
