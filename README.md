@@ -1,4 +1,7 @@
-# test coverage for  [minimatch (v3.0.3)](https://github.com/isaacs/minimatch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-minimatch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-minimatch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-minimatch.svg)](https://travis-ci.org/npmtest/node-npmtest-minimatch)
+# npmtest-minimatch
+
+#### basic test coverage for  [minimatch (v3.0.3)](https://github.com/isaacs/minimatch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-minimatch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-minimatch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-minimatch.svg)](https://travis-ci.org/npmtest/node-npmtest-minimatch)
+
 #### a glob matcher in javascript
 
 [![NPM](https://nodei.co/npm/minimatch.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/minimatch)
@@ -77,7 +80,8 @@
         "posttest": "standard minimatch.js test/*.js",
         "test": "tap test/*.js"
     },
-    "version": "3.0.3"
+    "version": "3.0.3",
+    "bin": {}
 }
 ```
 
